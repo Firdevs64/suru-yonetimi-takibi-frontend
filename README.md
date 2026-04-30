@@ -49,6 +49,4 @@ Projeyi yerel bilgisayarınızda çalıştırmak için şu adımları izleyin:
 | :---: | :---: |
 | ![Login](https://raw.githubusercontent.com/Firdevs64/suru-yonetimi-takibi-frontend/main/public/login.png) | *Modern Yönetim Paneli* |
 
----
-⭐ Bu projeyi beğendiyseniz yıldız vermeyi unutmayın!
-Developed with ❤️ by [Firdevs64](https://github.com/Firdevs64)
+
