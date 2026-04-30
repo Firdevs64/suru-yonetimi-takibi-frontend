@@ -1,16 +1,54 @@
-# React + Vite
+# 🐄 Sürü Yönetim Sistemi (Herd Management System)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Modern UI](https://raw.githubusercontent.com/Firdevs64/suru-yonetimi-takibi-frontend/main/public/login.png)
 
-Currently, two official plugins are available:
+Modern çiftlikler için tasarlanmış, yapay zeka destekli ve kullanıcı dostu bir **Sürü Yönetim Sistemi**. Bu platform, hayvanlarınızın sağlığını, üretimini ve bakım süreçlerini tek bir merkezden, en modern teknolojilerle takip etmenizi sağlar.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Öne Çıkan Özellikler
 
-## React Compiler
+- 📱 **Modern Arayüz:** Sade, şık ve kullanıcı deneyimi odaklı (UX) tasarım.
+- 🐮 **Hayvan Takibi:** Sürünüzdeki her bir hayvanın detaylı kaydı ve geçmişi.
+- 🔔 **Akıllı Bildirimler:** Aşı, kontrol ve bakım zamanları için anlık uyarı sistemi.
+- 🤖 **Yapay Zeka (AI) Desteği:** Sürünüzle ilgili verileri analiz eden akıllı asistan.
+- 🔐 **Gelişmiş Yetkilendirme:** Sistem Yöneticisi ve Çiftçi rolleriyle güvenli yönetim.
+- 📊 **Raporlama:** Veriminizi artıracak detaylı analizler ve grafikler.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Kullanılan Teknolojiler
 
-## Expanding the ESLint configuration
+- **Frontend:** React.js + Vite
+- **Styling:** Tailwind CSS (Premium Modern Tasarım)
+- **Icons:** Lucide React
+- **API:** .NET Core Web API (Backend Repo'da mevcut)
+- **AI:** Groq AI Engine
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Kurulum ve Çalıştırma
+
+Projeyi yerel bilgisayarınızda çalıştırmak için şu adımları izleyin:
+
+1. Depoyu klonlayın:
+   ```bash
+   git clone https://github.com/Firdevs64/suru-yonetimi-takibi-frontend.git
+   ```
+2. Bağımlılıkları yükleyin:
+   ```bash
+   npm install
+   ```
+3. `.env` dosyasını oluşturun ve API anahtarlarınızı ekleyin:
+   ```env
+   VITE_API_URL=http://localhost:5229/api
+   VITE_GROQ_API_KEY=your_api_key_here
+   ```
+4. Uygulamayı başlatın:
+   ```bash
+   npm run dev
+   ```
+
+## 📸 Ekran Görüntüleri
+
+| Giriş Sayfası | Dashboard |
+| :---: | :---: |
+| ![Login](https://raw.githubusercontent.com/Firdevs64/suru-yonetimi-takibi-frontend/main/public/login.png) | *Modern Yönetim Paneli* |
+
+---
+⭐ Bu projeyi beğendiyseniz yıldız vermeyi unutmayın!
+Developed with ❤️ by [Firdevs64](https://github.com/Firdevs64)
