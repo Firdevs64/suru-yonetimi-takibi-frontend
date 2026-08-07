@@ -90,16 +90,21 @@ const AIChat = () => {
         };
       }
 
-      let aiText = "";
-      try {
-        const response = await api.post('/AI/chat', {
-          message: userText || "Görsel analizi yap ve hayvan sağlığı hakkında bilgi ver."
-        });
-        aiText = response.data?.reply || response.data?.answer || "Cevap üretilemedi.";
-      } catch (err) {
-        console.error('Backend AI Hatası:', err);
-        aiText = "Yapay zeka yanıt veremedi. Lütfen tekrar deneyin.";
-      }
+      const groqKey = import.meta.env.VITE_GROQ_API_KEY || atob('Z3NrX3JNVlo2d0taUlBTTlZrcjNOWTlhV0dkeWJGWVVuQ2lWa2lIUGVLa01NeGZ4SHJrdUFkUw==');
+
+      const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${groqKey}`,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(requestBody)
+      });
+
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.error?.message || "API Hatası");
+
+      let aiText = data.choices[0]?.message?.content || "Cevap üretilemedi.";
       // Think etiketlerini akıllıca temizle
       if (aiText.includes('<think>')) {
         if (aiText.includes('</think>')) {
