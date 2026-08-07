@@ -3,7 +3,7 @@ import axios from 'axios';
 // Backend çalıştığında URL'i buraya göre ayarlayabilirsiniz.
 // Geliştirme aşamasında .NET projeniz genelde localhost:5000 veya benzeri çalışır.
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://suru-api.runasp.net/api',
+  baseURL: import.meta.env.VITE_API_URL || '/api',
   headers: {
     'Content-Type': 'application/json',
   },
