@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "http://suru-api-firdevs.somee.com/api/:path*"
+      "destination": "http://suru-api.runasp.net/api/:path*"
     }
   ]
 }

@@ -3,7 +3,7 @@ import { Platform } from 'react-native';
 
 // Android Emülatöründe 'localhost' 10.0.2.2'dir. 
 // Gerçek cihazda test edecekseniz bilgisayarınızın yerel IP adresini (örn: 192.168.1.50) yazmalısınız.
-const baseURL = 'http://192.168.1.105:5229/api';
+const baseURL = 'http://suru-api.runasp.net/api';
 
 const api = axios.create({
   baseURL: baseURL,
