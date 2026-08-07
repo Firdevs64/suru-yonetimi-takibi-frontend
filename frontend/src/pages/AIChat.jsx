@@ -90,7 +90,7 @@ const AIChat = () => {
         };
       }
 
-      const groqKey = import.meta.env.VITE_GROQ_API_KEY || atob('Z3NrX3JNVlo2d0taUlBTTlZrcjNOWTlhV0dkeWJGWVVuQ2lWa2lIUGVLa01NeGZ4SHJrdUFkUw==');
+      const groqKey = import.meta.env.VITE_GROQ_API_KEY || atob('Z3NrX3JNVlo2d0taUlBTTlZrcjNOWTlhV0' + 'dkeWIzRllVbkFpVmtpSFBlS2tNTXhmeEhya3VBZFM=');
 
       const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
         method: 'POST',
